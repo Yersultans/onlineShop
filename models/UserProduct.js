@@ -4,8 +4,8 @@ const mongoosePaginate = require('mongoose-paginate');
 const { Schema } = mongoose;
 
 const userproductschema = mongoose.Schema({
-	user_id: { type: Schema.Types.ObjectId, ref: "User"},
-	product_id: { type: Schema.Types.ObjectId, ref: "Product"}
+	userId: { type: Schema.Types.ObjectId, ref: "User"},
+	productId: { type: Schema.Types.ObjectId, ref: "Product"}
 });
 
 userproductschema.plugin(mongoosePaginate);

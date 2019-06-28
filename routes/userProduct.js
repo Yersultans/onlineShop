@@ -10,6 +10,6 @@ router.get('/getUserProducts', getUserProducts);
 router.get('/getUserProduct/:userProductId', getUserProduct);
 router.delete('/deleteUserProduct/:userProductId', deleteUserProduct);
 router.post('/addUserProduct', addUserProduct);
-// router.post('/updateUserProduct', updateUserProduct);
+router.post('/updateUserProduct/:userProductId', updateUserProduct);
 
 module.exports = router;

@@ -10,7 +10,7 @@ const { getReviews, getReview, addReview, deleteReview, updateReview } = require
 
 router.get("/getReviews", getReviews);
 router.get("/getReview/:reviewId", getReview);
-router.get("/addReview", addReview);
+router.post("/addReview", addReview);
 router.post("/updateReview/:reviewId", updateReview);
 router.delete("/deleteReview/:reviewId", deleteReview);
 
