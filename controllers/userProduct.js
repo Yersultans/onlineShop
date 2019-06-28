@@ -5,8 +5,7 @@ const UserProduct = mongoose.model("UserProduct");
 
 module.exports.getUserProducts = async (req, res) => {
 	try{
-		const userProducts = await UserProduct.find({}).lean();
-
+		const userProducts = await UserProduct.find().lean();
 
 		res.status(200).send(userProducts);
 
@@ -16,7 +15,6 @@ module.exports.getUserProducts = async (req, res) => {
 
 	}
 }
-
 
 module.exports.getUserProduct = async (req, res) => {
 	try {
@@ -37,7 +35,6 @@ module.exports.addUserProduct = async (req, res) => {
 		userProduct.userId = req.body.userId;
 		userProduct.productId = req.body.productId;
 	    await userProduct.save();
-	    //await contentRefresh();
 	    res.status(200).send(userProduct);
 
  

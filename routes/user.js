@@ -1,10 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-
-const mongoose = require('mongoose');
-const User = mongoose.model("User");
-
 const {  getUsers, getUser, addUser, deleteUser, updateUser } = require('../controllers/user');
 
 router.get('/getUsers', getUsers);

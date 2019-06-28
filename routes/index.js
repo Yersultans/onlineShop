@@ -4,7 +4,6 @@ const userRoutes = require('./user');
 const reviewRoutes = require('./review');
 const userProductRoutes = require('./userProduct');
 
-
 module.exports = app => {
 	app.use("/api", anthRoutes);
 	app.use("/api", productRoutes);

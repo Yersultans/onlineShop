@@ -8,7 +8,6 @@ const reviewschema = mongoose.Schema({
 	productId: { type: Schema.Types.ObjectId, ref: "Product"},
 	text: String,
 	point: Number
-
 });
 
 reviewschema.plugin(mongoosePaginate);

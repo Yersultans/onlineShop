@@ -1,10 +1,5 @@
 const express = require('express');
-
 const router = express.Router();
-
-const mongoose = require('mongoose');
-
-const Review = mongoose.model("Review");
 
 const { getReviews, getReview, addReview, deleteReview, updateReview } = require("../controllers/review");
 
