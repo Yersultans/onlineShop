@@ -3,8 +3,9 @@ const mongoosePaginate = require("mongoose-paginate");
 
 const { Schema } = mongoose;
 const productschema = mongoose.Schema({
-	name: String,
-	price: Number
+  name: String,
+  price: Number,
+	
 });
 
 productschema.plugin(mongoosePaginate);
